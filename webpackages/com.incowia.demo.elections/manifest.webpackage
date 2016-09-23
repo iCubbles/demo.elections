@@ -1,0 +1,32 @@
+{
+  "name": "elections",
+  "groupId": "com.incowia.demo",
+  "version": "0.1.0-SNAPSHOT",
+  "modelVersion": "9.1.0",
+  "docType": "webpackage",
+  "author": {
+    "name": "Philipp Wagner",
+    "email": "philipp.wagner@incowia.com"
+  },
+  "license": "MIT",
+  "keywords": [ ],
+  "man": [ ],
+  "artifacts": {
+    "apps": [
+      {
+        "artifactId": "docs",
+        "description": "Generated webpackage documentation.",
+        "runnables": [
+          {
+            "name": "docs",
+            "path": "/index.html",
+            "description": "Show the interface of this component."
+          }
+        ]
+      }
+    ],
+    "elementaryComponents": [ ],
+    "compoundComponents": [ ],
+    "utilities": [ ]
+  }
+}
