@@ -9,8 +9,8 @@
     "email": "philipp.wagner@incowia.com"
   },
   "license": "MIT",
-  "keywords": [ ],
-  "man": [ ],
+  "keywords": [],
+  "man": [],
   "artifacts": {
     "apps": [
       {
@@ -25,8 +25,94 @@
         ]
       }
     ],
-    "elementaryComponents": [ ],
-    "compoundComponents": [ ],
-    "utilities": [ ]
+    "elementaryComponents": [],
+    "compoundComponents": [
+      {
+        "artifactId": "federal-state-elections",
+        "description": "Example of showing results of the federal state elections in thuringia.",
+        "runnables": [
+          {
+            "name": "demo",
+            "path": "/demo/index.html",
+            "description": "Demo app..."
+          },
+          {
+            "name": "docs",
+            "path": "/docs/index.html",
+            "description": "Show the interface and dataflow of this component."
+          }
+        ],
+        "resources": [
+          "css/federal-state-elections.css",
+          "template.html",
+          "hookFunctions.js"
+        ],
+        "dependencies": [
+          {
+            "webpackageId": "com.incowia.ajax@0.2.1",
+            "artifactId": "ajax-request"
+          },
+          {
+            "webpackageId": "com.incowia.lib.chart-library@0.2.0-SNAPSHOT",
+            "artifactId": "bar-chart"
+          }
+        ],
+        "slots": [
+          {
+            "slotId": "url",
+            "type": "string",
+            "direction": [
+              "input"
+            ]
+          }
+        ],
+        "members": [
+          {
+            "memberId": "request-election-results",
+            "artifactId": "ajax-request"
+          },
+          {
+            "memberId": "results-bar-chart",
+            "artifactId": "bar-chart"
+          }
+        ],
+        "connections": [
+          {
+            "connectionId": "url-to-config",
+            "source": {
+              "slot": "url"
+            },
+            "destination": {
+              "memberIdRef": "request-election-results",
+              "slot": "config"
+            },
+            "hookFunction": "com_incowia_demo_elections.buildAjaxRequestConfig"
+          },
+          {
+            "connectionId": "result-to-bar-chart",
+            "source": {
+              "memberIdRef": "request-election-results",
+              "slot": "result"
+            },
+            "destination": {
+              "memberIdRef": "results-bar-chart",
+              "slot": "dataColumns"
+            }
+          }
+        ],
+        "inits": [
+          {
+            "memberIdRef": "results-bar-chart",
+            "slot": "xLabels",
+            "value": ["CDU", "Die Linke", "SPD", "FDP", "Grüne", "AFD", "Sonstige"]
+          },
+          {
+            "slot": "url",
+            "value": "../data/overall.json"
+          }
+        ]
+      }
+    ],
+    "utilities": []
   }
 }
