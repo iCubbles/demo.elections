@@ -108,7 +108,7 @@
           },
           {
             "slot": "url",
-            "value": "../data/overall.json"
+            "value": "https://cubbles.world/sandbox/com.incowia.demo.data@0.1.0-SNAPSHOT/elections/overall.json"
           }
         ]
       }
