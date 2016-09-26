@@ -2,7 +2,7 @@
 
 <hr/>
 
-This is a small Cubbles demo showing the creation of a compound Cubble using existing Cubbles. In directory  `webpackages/com.incowia.demo.elections` you can find compound component `federal-state-elections` and it's coressponding `manifest.webpackage`.
+This is a small Cubbles demo showing the creation of a compound Cubble using existing Cubbles. In directory  `webpackages/com.incowia.demo.elections` you can find compound component `federal-state-elections` and it's corresponding `manifest.webpackage`.
 
 Basically the `federal-state-elections` Cubble has the following structure:
 
