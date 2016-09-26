@@ -1,4 +1,22 @@
-## .
+## Cubbles <federal-state-elections> demo
 
 <hr/>
-Note This page is generated based on the markdown-syntax. For details see <http://daringfireball.net/projects/markdown/syntax/>
+
+This is a small Cubbles demo showing the creation of a compound Cubble using existing Cubbles. In directory  `webpackages/com.incowia.demo.elections` you can find compound component `federal-state-elections` and it's coressponding `manifest.webpackage`.
+
+Basically the `federal-state-elections` Cubble has the following structure:
+
+```
+      _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+     |                                <federal-state-elections>                          |
+     |      _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _         _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _    |
+     |     |   request-election-results      |       |          results-bar-chart    |   |
+     |     |        <ajax-request>    status O       O xLabels     <bar-chart>       |   |
+ url O---->O config                          |       |                               |   |
+     |     |                          result O-----> O dataColumns                   |   |
+     |     |_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _|       |_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _|   |
+     |_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _|
+
+```
+
+Wan't to get to know more about Cubbles Platform? Visit[cubbles.github.io](www.cubbles.github.io)
