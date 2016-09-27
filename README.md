@@ -19,4 +19,4 @@ Basically the `federal-state-elections` Cubble has the following structure:
 
 ```
 
-Wan't to get to know more about Cubbles Platform? Visit[cubbles.github.io](www.cubbles.github.io)
+Wan't to get to know more about Cubbles Platform? Visit [cubbles.github.io](http://cubbles.github.io/)
