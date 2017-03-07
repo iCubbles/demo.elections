@@ -53,7 +53,7 @@
             "artifactId": "ajax-request"
           },
           {
-            "webpackageId": "com.incowia.lib.chart-library@0.2.0-SNAPSHOT",
+            "webpackageId": "com.incowia.lib.chart-library@0.3.0-SNAPSHOT",
             "artifactId": "bar-chart"
           }
         ],
